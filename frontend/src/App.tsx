@@ -197,7 +197,20 @@ function App() {
     <main className="app">
       <section className="hero">
         <div>
-          <p className="eyebrow">Intern Developer Test</p>
+          <a
+            href="https://github.com/thanhlong2023/todo-app"
+            className="eyebrow"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mã nguồn dự án
+            <img
+              className="eyebrow-icon"
+              src="/github-svgrepo-com.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </a>
           <h1>Todo List App</h1>
           <p className="hero-desc">
             Ứng dụng quản lý công việc dùng React TypeScript, Express, Sequelize

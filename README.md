@@ -429,41 +429,6 @@ sequelize.sync({ alter: true })
 
 Nên khi backend chạy, Sequelize sẽ tự đồng bộ table theo model.
 
-## Kiểm Tra Trước Khi Nộp/Review
-
-Chạy Docker:
-
-```bash
-docker-compose up -d
-docker-compose ps
-```
-
-Kiểm tra backend:
-
-```bash
-cd backend
-npm install
-npm run dev
-```
-
-Kiểm tra frontend:
-
-```bash
-cd frontend
-npm install
-npm run lint
-npm run build
-npm run dev
-```
-
-Kiểm tra nhanh trên browser:
-
-```txt
-http://localhost:5000/
-http://localhost:5000/api/todos
-http://localhost:5173
-```
-
 ## Lưu Ý Về .gitignore
 
 Project có `.gitignore` ở root để không đưa các file/thư mục sinh ra trong quá trình chạy lên Git:

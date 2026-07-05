@@ -51,12 +51,42 @@ button:disabled {
 }
 
 .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin: 0 0 8px;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #bfdbfe;
+  text-decoration: none;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+.eyebrow:hover {
+  color: #fff;
+  opacity: 0.95;
+}
+
+.eyebrow:focus-visible {
+  outline: 3px solid rgba(191, 219, 254, 0.7);
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+
+.eyebrow-icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  filter: invert(89%) sepia(12%) saturate(979%) hue-rotate(178deg)
+    brightness(101%) contrast(99%);
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.eyebrow:hover .eyebrow-icon {
+  filter: brightness(0) invert(1);
+  transform: translateY(-1px);
 }
 
 .hero h1 {
